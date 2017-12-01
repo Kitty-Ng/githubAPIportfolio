@@ -1,0 +1,20 @@
+<br>
+<div class="container banner">
+    <table class="table table-hover">
+        <thead>
+            <tr class="row">
+                <th class ="col-md-4 column">Project Name</th>
+                <th class ="col-md-4 column">Start Date</th>
+                <th class ="col-md-4 column">Last Commit</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="row" ng-repeat="repo in rc.repos.data | orderBy:'-pushed_at'">
+                <td class ="col-md-4 column"><a ng-href="{{repo.html_url}}" target="_blank">{{repo.name}}</a></td>
+                <td class ="col-md-4 column">{{repo.created_at | date:'longDate'}}</td>
+                <td class ="col-md-4 column">{{repo.pushed_at | date:'longDate'}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

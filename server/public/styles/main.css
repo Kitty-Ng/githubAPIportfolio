@@ -1,0 +1,34 @@
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 40px;
+}
+
+nav, .banner {
+    background-color: #dbc3d0;
+}
+
+body {
+    background-image: url("http://www.2kwp.com/wp-content/uploads/2016/12/circuit-10.png");
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.textfield {
+    padding: 40px;
+}
+
+.contact {
+    display: block;
+    text-align: center;
+    padding: 40px;
+}
+
+a {
+    color: purple;
+}
+
+a:hover {
+    color: white;
+}

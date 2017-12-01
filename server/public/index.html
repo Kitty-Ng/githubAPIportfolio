@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Kitty Walders - Full Stack Engineer</title>
+  <script src="vendors/angular.min.js" charset="utf-8"></script>
+  <script src="vendors/angular-route.min.js" charset="utf-8"></script>
+  <script src="scripts/client.js" charset="utf-8"></script>
+  <script src="scripts/controllers/user.controller.js" charset="utf-8"></script>
+  <script src="scripts/controllers/repos.controller.js" charset="utf-8"></script>
+  <script src="scripts/controllers/contact.controller.js" charset="utf-8"></script>
+  <script src="scripts/github.service.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body ng-app="myApp" style="background-color: #dbc3d0">
+  <br>
+  <div class="container">
+    <nav class="navbar navbar-expand-sm navbar-toggleable-md">
+      <button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#/"><i class="fa fa-home"></i> Home
+              <span class="sr-only">(current)</span>
+            </a>
+          <a class="nav-item nav-link" href="/#/repos"><i class="fa fa-list"></i> Repositories</a>
+          <a class="nav-item nav-link" href="/#/contact"><i class="fa fa-envelope"></i> Contact Info</a>
+          <a class="nav-item nav-link" href="http://github.com/Kitty-Ng" target="_blank"><i class="fa fa-github"></i> Github</a>
+          <a class="nav-item nav-link" href="http://www.linkedin.com/in/kittywalders" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </nav>
+
+  <main ng-view></main>
+  </div>
+</body>
+
+</html>
